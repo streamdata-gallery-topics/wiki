@@ -1,5 +1,4 @@
 ---
----
 name: Atlassian
 description: Atlassian is a software company that provides innovative enterprise software
   solutions to a number of organizations. Originally founded in 2002 in Sydney, Australia,
@@ -18,8 +17,8 @@ tags:
 - Issues
 - Coding
 - Code Issues
-created: "2018-02-24"
-modified: "2018-02-24"
+created: "2018-02-26"
+modified: "2018-02-26"
 url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/atlassian/apis.yaml
 specificationVersion: "0.14"
 apis: []
@@ -41,6 +40,4 @@ maintainers:
 - FN: Kin Lane
   x-twitter: apievangelist
   email: info@apievangelist.com
-...
-
 ---
