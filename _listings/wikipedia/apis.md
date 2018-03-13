@@ -28,7 +28,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/wikipedia/metrics-unique-devices-project-access-site-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/wikipedia/transform-html-from-from-lang-to-to-lang-post.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
