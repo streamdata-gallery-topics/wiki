@@ -32,7 +32,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/reddit/r-subreddit-wiki-edit-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/reddit/r-subreddit-wiki-hide-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
