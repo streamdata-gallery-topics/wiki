@@ -28,7 +28,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/wikipedia/metrics-edited-pages-new-project-editor-type-page-type-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/wikipedia/metrics-edited-pages-top-by-absolute-bytes-difference-project-editor-type-page-type-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
