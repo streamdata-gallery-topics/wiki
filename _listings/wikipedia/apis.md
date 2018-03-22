@@ -28,7 +28,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-per-article-project-access-agent-article-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-top-by-country-project-access-year-month-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
