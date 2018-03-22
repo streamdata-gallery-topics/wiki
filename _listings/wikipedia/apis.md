@@ -28,7 +28,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-html-from-from-lang-to-to-lang-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-html-from-from-lang-to-to-lang-provider-post.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
