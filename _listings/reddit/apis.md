@@ -17,9 +17,9 @@ tags:
 - Media
 - Links
 - Evangelism
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/reddit/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Reddit
@@ -32,7 +32,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-alloweditor-act-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
