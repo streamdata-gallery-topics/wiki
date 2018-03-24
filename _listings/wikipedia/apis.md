@@ -28,7 +28,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-check-type-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-formula-hash-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
