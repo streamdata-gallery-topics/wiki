@@ -1,9 +1,17 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Check and normalize a TeX formula.
+  description: |-
+    Checks the supplied TeX formula for correctness and returns the
+    normalised formula representation as well as information about
+    identifiers. Available types are tex and inline-tex. The response
+    contains the `x-resource-location` header which can be used to retrieve
+    the render of the checked formula in one of the supported rendering
+    formats. Just append the value of the header to `/media/math/{format}/`
+    and perform a GET request against that URL.
+
+    Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
