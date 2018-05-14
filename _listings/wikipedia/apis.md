@@ -29,12 +29,12 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get pageviews by country and access method.
+- name: Wikipedia Get the most viewed articles for a project.
   description: |-
-    Lists the pageviews to this project, split by country of origin for a given month.
-    Because of privacy reasons, pageviews are given in a bucketed format, and countries
-    with less than 100 views do not get reported.
-    Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    Lists the 1000 most viewed articles for a given project and timespan (month or day).
+    You can filter by access method.
+
+    - Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable)
     - Rate limit: 100 req/s
     - License: Data accessible via this endpoint is available under the
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -44,7 +44,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-top-by-country-project-access-year-month-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-top-project-access-year-month-day-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
