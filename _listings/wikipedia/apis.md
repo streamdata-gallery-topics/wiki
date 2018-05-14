@@ -29,12 +29,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get top 100 edited-pages by net bytes-difference.
+- name: Wikipedia Get editors counts for a project.
   description: |-
-    Given a Mediawiki project and a date range, returns a timeseries of the top 100 edited-pages
-    by net bytes-difference. You can filter by editor-type (all-editor-types, anonymous,
-    group-bot, name-bot, user) or page-type (all-page-types, content or non-content). You can
-    choose between daily and monthly granularity as well.
+    Given a Mediawiki project and a date range, returns a timeseries of its editors counts.
+    You can filter by editory-type (all-editor-types, anonymous, group-bot, name-bot, user),
+    page-type (all-page-types, content or non-content) or activity-level (1..4-edits,
+    5..24-edits, 25..99-edits or 100..-edits). You can choose between daily and monthly
+    granularity as well.
 
     - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
     - Rate limit: 100 req/s
@@ -46,7 +47,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-edited-pages-top-by-net-bytes-difference-project-editor-type-page-type-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-editors-aggregate-project-editor-type-page-type-activity-level-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
