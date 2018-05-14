@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
-- name: Reddit Add Subreddit Wiki Revert
-  description: Revert a wiki page to revision
+- name: Reddit Get Subreddit Wiki Discussions Page
+  description: Retrieve a list of discussions about this wiki page
   image: http://www.redditstatic.com/about/assets/reddit-logo.png
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com//
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-revert-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-discussions-page-get.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
