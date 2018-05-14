@@ -1,9 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Fetch the dictionary meaning of a word
+  description: |-
+    Fetches the dictionary meaning of a word from a language and displays
+    it in the target language.
+
+    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
