@@ -1,9 +1,18 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get editors counts for a project.
+  description: |-
+    Given a Mediawiki project and a date range, returns a timeseries of its editors counts.
+    You can filter by editory-type (all-editor-types, anonymous, group-bot, name-bot, user),
+    page-type (all-page-types, content or non-content) or activity-level (1..4-edits,
+    5..24-edits, 25..99-edits or 100..-edits). You can choose between daily and monthly
+    granularity as well.
+
+    - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    - Rate limit: 100 req/s
+    - License: Data accessible via this endpoint is available under the
+      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
