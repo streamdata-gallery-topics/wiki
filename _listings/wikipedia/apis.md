@@ -29,22 +29,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get rendered formula in the given format.
+- name: |-
+    Wikipedia Get the sum of absolute value of text bytes difference between current edit and
+    previous one.
   description: |-
-    Given a request hash, renders a TeX formula into its mathematic
-    representation in the given format. When a request is issued to the
-    `/media/math/check/{format}` POST endpoint, the response contains the
-    `x-resource-location` header denoting the hash ID of the POST data. Once
-    obtained, this endpoint has to be used to obtain the actual render.
+    Given a Mediawiki project and a date range, returns a timeseries of absolute bytes
+    difference sums. You can filter by editors-type (all-editor-types, anonymous, group-bot,
+    name-bot, user) and page-type (all-page-types, content, non-content). You can choose
+    between daily and monthly granularity as well.
 
-    Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
+    - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    - Rate limit: 100 req/s
+    - License: Data accessible via this endpoint is available under the
+      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/144_logo.png
   humanURL: https://www.wikipedia.org/
   baseURL: https://wikimedia.org//api/rest_v1
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-render-format-hash-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-bytes-difference-absolute-aggregate-project-editor-type-page-type-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
