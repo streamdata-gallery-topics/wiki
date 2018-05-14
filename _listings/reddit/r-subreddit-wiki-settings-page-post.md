@@ -1,13 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Reddit
-  description: The Reddit API allows you to access the user submitted and rated stories
-    on reddit.com. It also provides advanced functionality, including user account
-    information and sub-reddit moderation.
+  title: Reddit Add Subreddit Wiki Settings Page
+  description: Update the permissions and visibility of wiki page
   version: 1.0.0
 host: www.reddit.com
-basePath: api/
+basePath: /
 schemes:
 - http
 produces:
@@ -21,6 +19,11 @@ paths:
       description: Update the permissions and visibility of wiki page
       operationId: post&nbsp;RSubredditWikiSettingsPage
       parameters:
+      - in: query
+        name: /r/subreddit
+        description: subreddit
+        type: string
+        format: string
       - in: query
         name: listed
         description: boolean value
