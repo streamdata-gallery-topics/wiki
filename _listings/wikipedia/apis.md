@@ -29,15 +29,10 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Check and normalize a TeX formula.
+- name: Wikipedia Get a previously-stored formula
   description: |-
-    Checks the supplied TeX formula for correctness and returns the
-    normalised formula representation as well as information about
-    identifiers. Available types are tex and inline-tex. The response
-    contains the `x-resource-location` header which can be used to retrieve
-    the render of the checked formula in one of the supported rendering
-    formats. Just append the value of the header to `/media/math/{format}/`
-    and perform a GET request against that URL.
+    Returns the previously-stored formula via `/media/math/check/{type}` for
+    the given hash.
 
     Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/144_logo.png
@@ -46,7 +41,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-check-type-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-formula-hash-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
