@@ -1,9 +1,18 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get top 100 editors by net bytes-difference.
+  description: |-
+    Given a Mediawiki project and a date range, returns a timeseries of the top 100 editors by
+    net bytes-difference. You can filter by editor-type (all-editor-types, anonymous, group-bot,
+    name-bot, user) or page-type (all-page-types, content or non-content). You can choose
+    between daily and monthly granularity as well. The user_id returned is either the mediawiki
+    user_id if user is registered, or his/her IP if the user is anonymous.
+
+    - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    - Rate limit: 100 req/s
+    - License: Data accessible via this endpoint is available under the
+      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
