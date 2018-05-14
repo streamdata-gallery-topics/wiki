@@ -1,9 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get pageview counts for a page.
+  description: |-
+    Given a Mediawiki article and a date range, returns a daily timeseries of its pageview
+    counts. You can also filter by access method and/or agent type.
+
+    - Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable)
+    - Rate limit: 100 req/s
+    - License: Data accessible via this endpoint is available under the
+      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
