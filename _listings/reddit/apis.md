@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
-- name: Reddit Get Subreddit Wiki Pages
-  description: Retrieve a list of wiki pages in this subreddit
+- name: Reddit Get Subreddit Wiki Revisions
+  description: Retrieve a list of recently changed wiki pages in this subreddit
   image: http://www.redditstatic.com/about/assets/reddit-logo.png
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com//
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-pages-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-revisions-get.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
