@@ -29,12 +29,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get edits counts for a project.
+- name: Wikipedia Given a project and a date range, returns a timeseries of pagecounts.
+    You can filter by access site (mobile or desktop) and you can choose between monthly,
+    daily and hourly granularity as well.
   description: |-
-    Given a Mediawiki project and a date range, returns a timeseries of edits counts.
-    You can filter by editors-type (all-editor-types, anonymous, bot, registered) and
-    page-type (all-page-types, content or non-content). You can choose between daily and
-    monthly granularity as well.
+    Given a project and a date range, returns a timeseries of pagecounts.
+    You can filter by access site (mobile or desktop) and you can choose between monthly,
+    daily and hourly granularity as well.
 
     - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
     - Rate limit: 100 req/s
@@ -46,7 +47,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-edits-aggregate-project-editor-type-page-type-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-legacy-pagecounts-aggregate-project-access-site-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
