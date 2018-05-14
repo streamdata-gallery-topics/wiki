@@ -29,23 +29,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get unique devices count per project
+- name: Wikipedia Machine-translate content
   description: |-
-    Given a project and a date range, returns a timeseries of unique devices counts.
-    You need to specify a project, and can filter by accessed site (mobile or desktop).
-    You can choose between daily and hourly granularity as well.
+    Fetches the machine translation for the posted content from the source
+    to the destination language.
 
-    - Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable)
-    - Rate limit: 100 req/s
-    - License: Data accessible via this endpoint is available under the
-      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
+    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/144_logo.png
   humanURL: https://www.wikipedia.org/
   baseURL: https://wikimedia.org//api/rest_v1
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-unique-devices-project-access-site-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-html-from-from-lang-to-to-lang-post.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
