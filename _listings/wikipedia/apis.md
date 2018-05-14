@@ -29,10 +29,10 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Lists the tools and language pairs available for the given tool
-    category
+- name: Wikipedia Fetch the dictionary meaning of a word
   description: |-
-    Fetches the list of tools and all of the language pairs it can translate
+    Fetches the dictionary meaning of a word from a language and displays
+    it in the target language.
 
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/144_logo.png
@@ -41,7 +41,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-list-tool-tool-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
