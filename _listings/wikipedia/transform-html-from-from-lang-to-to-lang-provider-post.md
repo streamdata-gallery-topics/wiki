@@ -1,9 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Machine-translate content
+  description: |-
+    Fetches the machine translation for the posted content from the source
+    to the destination language.
+
+    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
