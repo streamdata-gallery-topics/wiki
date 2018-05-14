@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
-- name: Reddit Add Subreddit Wiki
-  description: Toggle the public visibility of a wiki page revision
+- name: Reddit Add Subreddit Wiki Revert
+  description: Revert a wiki page to revision
   image: http://www.redditstatic.com/about/assets/reddit-logo.png
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com//
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-hide-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-revert-post.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
