@@ -1,9 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get rendered formula in the given format.
+  description: |-
+    Given a request hash, renders a TeX formula into its mathematic
+    representation in the given format. When a request is issued to the
+    `/media/math/check/{format}` POST endpoint, the response contains the
+    `x-resource-location` header denoting the hash ID of the POST data. Once
+    obtained, this endpoint has to be used to obtain the actual render.
+
+    Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
