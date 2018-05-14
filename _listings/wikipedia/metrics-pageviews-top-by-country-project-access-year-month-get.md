@@ -1,9 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get pageviews by country and access method.
+  description: |-
+    Lists the pageviews to this project, split by country of origin for a given month.
+    Because of privacy reasons, pageviews are given in a bucketed format, and countries
+    with less than 100 views do not get reported.
+    Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    - Rate limit: 100 req/s
+    - License: Data accessible via this endpoint is available under the
+      [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
