@@ -29,10 +29,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get a previously-stored formula
+- name: Wikipedia Get rendered formula in the given format.
   description: |-
-    Returns the previously-stored formula via `/media/math/check/{type}` for
-    the given hash.
+    Given a request hash, renders a TeX formula into its mathematic
+    representation in the given format. When a request is issued to the
+    `/media/math/check/{format}` POST endpoint, the response contains the
+    `x-resource-location` header denoting the hash ID of the POST data. Once
+    obtained, this endpoint has to be used to obtain the actual render.
 
     Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/144_logo.png
@@ -41,7 +44,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-formula-hash-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/media-math-render-format-hash-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
