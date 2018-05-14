@@ -29,12 +29,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Get the most viewed articles for a project.
+- name: Wikipedia Get newly registered users counts for a project.
   description: |-
-    Lists the 1000 most viewed articles for a given project and timespan (month or day).
-    You can filter by access method.
+    Given a Mediawiki project and a date range, returns a timeseries of its newly registered
+    users counts. You can choose between daily and monthly granularity. The newly registered
+    users value is computed with self-created users only, not auto-login created ones.
 
-    - Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable)
+    - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
     - Rate limit: 100 req/s
     - License: Data accessible via this endpoint is available under the
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -44,7 +45,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-top-project-access-year-month-day-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-registered-users-new-project-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
