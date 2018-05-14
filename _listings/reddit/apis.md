@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
-- name: Reddit Add Subreddit Wiki Settings Page
-  description: Update the permissions and visibility of wiki page
+- name: Reddit Get Subreddit Wiki Page
+  description: Return the content of a wiki page
   image: http://www.redditstatic.com/about/assets/reddit-logo.png
   humanURL: http://www.reddit.com
   baseURL: https://www.reddit.com//
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-settings-page-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/r-subreddit-wiki-page-get.md
 x-common:
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
