@@ -1,9 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Get a previously-stored formula
+  description: |-
+    Returns the previously-stored formula via `/media/math/check/{type}` for
+    the given hash.
+
+    Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
