@@ -29,15 +29,13 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transform-word-from-from-lang-to-to-lang-word-provider-get.md
-- name: Wikipedia Given a project and a date range, returns a timeseries of pagecounts.
-    You can filter by access site (mobile or desktop) and you can choose between monthly,
-    daily and hourly granularity as well.
+- name: Wikipedia Get pageview counts for a project.
   description: |-
-    Given a project and a date range, returns a timeseries of pagecounts.
-    You can filter by access site (mobile or desktop) and you can choose between monthly,
-    daily and hourly granularity as well.
+    Given a date range, returns a timeseries of pageview counts. You can filter by project,
+    access method and/or agent type. You can choose between daily and hourly granularity
+    as well.
 
-    - Stability: [experimental](https://www.mediawiki.org/wiki/API_versioning#Experimental)
+    - Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable)
     - Rate limit: 100 req/s
     - License: Data accessible via this endpoint is available under the
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -47,7 +45,7 @@ apis:
   tags: Wiki
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-legacy-pagecounts-aggregate-project-access-site-granularity-start-end-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metrics-pageviews-aggregate-project-access-agent-granularity-start-end-get.md
 x-common:
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
