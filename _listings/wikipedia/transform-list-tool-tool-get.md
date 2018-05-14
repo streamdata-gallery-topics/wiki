@@ -1,9 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Wikipedia
-  description: This API provides cacheable and straightforward access to Wikimedia
-    content and data, in machine-readable formats.
+  title: Wikipedia Lists the tools and language pairs available for the given tool
+    category
+  description: |-
+    Fetches the list of tools and all of the language pairs it can translate
+
+    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   termsOfService: https://wikimediafoundation.org/wiki/Terms_of_Use
   contact:
     name: the Wikimedia Services team
