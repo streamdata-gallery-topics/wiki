@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddi
 x-kinRank: "9"
 x-alexaRank: "6"
 tags: Wiki
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/apis.md
 specificationVersion: "0.14"
 apis:
@@ -158,6 +158,8 @@ x-common:
   url: legal@reddit.com
 - type: x-github
   url: https://github.com/reddit
+- type: x-linkedin
+  url: https://www.linkedin.com/company/product-hunt/
 - type: x-privacy
   url: https://www.reddit.com/help/privacypolicy
 - type: x-security
