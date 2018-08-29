@@ -1,0 +1,185 @@
+{
+	"name": "Streadata.io API Gallery - Wiki",
+	"description": "This is a repository of wiki APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/wiki.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://wiki.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Wikipedia",
+			"x-api-slug": "wikipedia",
+			"description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg",
+			"humanURL": "https://www.wikipedia.org/",
+			"baseURL": "https://wikimedia.org//api/rest_v1",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "WikiLocation",
+			"x-api-slug": "wikilocation",
+			"description": "",
+			"image": "",
+			"humanURL": "http://wikilocation.org/documentation/",
+			"baseURL": "https:///",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikilocation/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Atlassian",
+			"x-api-slug": "atlassian",
+			"description": "Millions of users globally rely on Atlassian products every day for improving software development, project management, collaboration, and code quality.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg",
+			"humanURL": "http://atlassian.com/",
+			"baseURL": "https:////",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/atlassian/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Twelephone",
+			"x-api-slug": "twelephone",
+			"description": "",
+			"image": "",
+			"humanURL": "http://twelephone.com/#/api",
+			"baseURL": "https:///",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/twelephone/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "University of Southern California",
+			"x-api-slug": "university-of-southern-california",
+			"description": "The University of Southern California is one of the worlds leading private research universities, established in 1880. An anchor institution in Los Angeles, a global center for arts, technology and international trade, USC enrolls more international s...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1740-university-of-southern-california.jpg",
+			"humanURL": "http://usc.edu",
+			"baseURL": "https:///",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/university-of-southern-california/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Reddit",
+			"x-api-slug": "reddit",
+			"description": "Reddit is a community of millions of users engaging in the creation of content and the sharing of conversation across tens of thousands of topics.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg",
+			"humanURL": "http://www.reddit.com",
+			"baseURL": "https:///",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Avaza",
+			"x-api-slug": "avaza",
+			"description": "Avaza is a beautiful online software suite with modules for Project Management, Timesheets, Expenses &amp; Invoicing. Access from anywhere, with any device. Avaza is the leading all-in-one software for running client focused businesses. Avaza allows businesses of all sizes to more easily and effectively manage team projects, time tracking, expense reporting, quoting &amp; invoicing. It can be accessed simply via a web browser from anywhere in the world on any device.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28373-avaza.jpg",
+			"humanURL": "https://www.avaza.com",
+			"baseURL": "https:///",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/avaza/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Open Science Framework",
+			"x-api-slug": "open-science-framework",
+			"description": "OSF provides free and open source project management support for researchers across the entire research lifecycle. As a collaboration tool, OSF helps researchers work on projects privately with a limited number of collaborators and make parts of their projects public, or make all the project publicly accessible for broader dissemination. As a workflow system, OSF enables connections to the many services researchers already use to streamline their process and increase efficiency. As a flexible repository, it can store and archive research data, protocols, and materials.",
+			"image": "",
+			"humanURL": "https://cos.io",
+			"baseURL": "https://test-api.osf.io//v2",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/open-science-framework/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "GitLab",
+			"x-api-slug": "gitlab",
+			"description": "GitLab is a web-based Git-repository manager with wiki, issue-tracking and CI/CD pipelines features, using an open-source license, developed by GitLab Inc.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/githlab-logo.png",
+			"humanURL": "http://gitlab.com",
+			"baseURL": "https://localhost:3000//api",
+			"tags": "Wiki",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/gitlab/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Wiki",
+	"include": [
+		{
+			"name": "Wikipedia",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/apis.yaml"
+		},
+		{
+			"name": "WikiLocation",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikilocation/apis.yaml"
+		},
+		{
+			"name": "Atlassian",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/atlassian/apis.yaml"
+		},
+		{
+			"name": "Twelephone",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/twelephone/apis.yaml"
+		},
+		{
+			"name": "University of Southern California",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/university-of-southern-california/apis.yaml"
+		},
+		{
+			"name": "Reddit",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/apis.yaml"
+		},
+		{
+			"name": "Avaza",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/avaza/apis.yaml"
+		},
+		{
+			"name": "Open Science Framework",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/open-science-framework/apis.yaml"
+		},
+		{
+			"name": "GitLab",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/gitlab/apis.yaml"
+		}
+	]
+}

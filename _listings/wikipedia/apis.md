@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipe
 x-kinRank: "8"
 x-alexaRank: "5"
 tags: Wiki
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Wikipedia Check and normalize a TeX formula.
-  x-api-slug: wikipedia
+- name: Wikipedia - Check and normalize a TeX formula.
+  x-api-slug: mediamathchecktype-post
   description: |-
     Checks the supplied TeX formula for correctness and returns the
     normalised formula representation as well as information about
@@ -26,13 +26,14 @@ apis:
     Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//media/math/check/{type}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/mediamathchecktype-post-openapi.md
-- name: Wikipedia Get a previously-stored formula
-  x-api-slug: wikipedia
+- name: Wikipedia - Get a previously-stored formula
+  x-api-slug: mediamathformulahash-get
   description: |-
     Returns the previously-stored formula via `/media/math/check/{type}` for
     the given hash.
@@ -40,13 +41,14 @@ apis:
     Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//media/math/formula/{hash}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/mediamathformulahash-get-openapi.md
-- name: Wikipedia Get rendered formula in the given format.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get rendered formula in the given format.
+  x-api-slug: mediamathrenderformathash-get
   description: |-
     Given a request hash, renders a TeX formula into its mathematic
     representation in the given format. When a request is issued to the
@@ -57,15 +59,16 @@ apis:
     Stability: [stable](https://www.mediawiki.org/wiki/API_versioning#Stable).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//media/math/render/{format}/{hash}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/mediamathrenderformathash-get-openapi.md
 - name: |-
-    Wikipedia Get the sum of absolute value of text bytes difference between current edit and
+    Wikipedia - Get the sum of absolute value of text bytes difference between current edit and
     previous one.
-  x-api-slug: wikipedia
+  x-api-slug: metricsbytesdifferenceabsoluteaggregateprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of absolute bytes
     difference sums. You can filter by editors-type (all-editor-types, anonymous, group-bot,
@@ -78,14 +81,15 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/bytes-difference/absolute/aggregate/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricsbytesdifferenceabsoluteaggregateprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get the sum of net text bytes difference between current edit and
-    previous one.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get the sum of net text bytes difference between current edit
+    and previous one.
+  x-api-slug: metricsbytesdifferencenetaggregateprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of bytes difference net
     sums. You can filter by editors-type (all-editor-types, anonymous, group-bot, name-bot,
@@ -98,13 +102,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/bytes-difference/net/aggregate/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricsbytesdifferencenetaggregateprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get edited-pages counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get edited-pages counts for a project.
+  x-api-slug: metricseditedpagesaggregateprojecteditortypepagetypeactivitylevelgranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of its edited-pages counts.
     You can filter by editor-type (all-editor-types, anonymous, group-bot, name-bot, user),
@@ -118,13 +123,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edited-pages/aggregate/{project}/{editor-type}/{page-type}/{activity-level}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditedpagesaggregateprojecteditortypepagetypeactivitylevelgranularitystartend-get-openapi.md
-- name: Wikipedia Get new pages counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get new pages counts for a project.
+  x-api-slug: metricseditedpagesnewprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of its new pages counts.
     You can filter by editor type (all-editor-types, anonymous, group-bot, name-bot, user)
@@ -140,13 +146,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edited-pages/new/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditedpagesnewprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 edited-pages by absolute bytes-difference.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 edited-pages by absolute bytes-difference.
+  x-api-slug: metricseditedpagestopbyabsolutebytesdifferenceprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 edited-pages
     by absolute bytes-difference. You can filter by editor-type (all-editor-types, anonymous,
@@ -159,13 +166,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edited-pages/top-by-absolute-bytes-difference/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditedpagestopbyabsolutebytesdifferenceprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 edited-pages by edits count.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 edited-pages by edits count.
+  x-api-slug: metricseditedpagestopbyeditsprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 edited-pages
     by edits count. You can filter by editor-type (all-editor-types, anonymous, group-bot,
@@ -178,13 +186,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edited-pages/top-by-edits/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditedpagestopbyeditsprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 edited-pages by net bytes-difference.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 edited-pages by net bytes-difference.
+  x-api-slug: metricseditedpagestopbynetbytesdifferenceprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 edited-pages
     by net bytes-difference. You can filter by editor-type (all-editor-types, anonymous,
@@ -197,13 +206,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edited-pages/top-by-net-bytes-difference/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditedpagestopbynetbytesdifferenceprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get editors counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get editors counts for a project.
+  x-api-slug: metricseditorsaggregateprojecteditortypepagetypeactivitylevelgranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of its editors counts.
     You can filter by editory-type (all-editor-types, anonymous, group-bot, name-bot, user),
@@ -217,13 +227,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/editors/aggregate/{project}/{editor-type}/{page-type}/{activity-level}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditorsaggregateprojecteditortypepagetypeactivitylevelgranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 editors by absolute bytes-difference.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 editors by absolute bytes-difference.
+  x-api-slug: metricseditorstopbyabsolutebytesdifferenceprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 editors by
     absolute bytes-difference. You can filter by editor-type (all-editor-types, anonymous,
@@ -237,13 +248,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/editors/top-by-absolute-bytes-difference/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditorstopbyabsolutebytesdifferenceprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 editors by edits count.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 editors by edits count.
+  x-api-slug: metricseditorstopbyeditsprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 editors by
     edits count. You can filter by editor-type (all-editor-types, anonymous, group-bot,
@@ -257,13 +269,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/editors/top-by-edits/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditorstopbyeditsprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get top 100 editors by net bytes-difference.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get top 100 editors by net bytes-difference.
+  x-api-slug: metricseditorstopbynetbytesdifferenceprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of the top 100 editors by
     net bytes-difference. You can filter by editor-type (all-editor-types, anonymous, group-bot,
@@ -277,13 +290,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/editors/top-by-net-bytes-difference/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditorstopbynetbytesdifferenceprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Get edits counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get edits counts for a project.
+  x-api-slug: metricseditsaggregateprojecteditortypepagetypegranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of edits counts.
     You can filter by editors-type (all-editor-types, anonymous, bot, registered) and
@@ -296,15 +310,16 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/edits/aggregate/{project}/{editor-type}/{page-type}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricseditsaggregateprojecteditortypepagetypegranularitystartend-get-openapi.md
-- name: Wikipedia Given a project and a date range, returns a timeseries of pagecounts.
+- name: Wikipedia - Given a project and a date range, returns a timeseries of pagecounts.
     You can filter by access site (mobile or desktop) and you can choose between monthly,
     daily and hourly granularity as well.
-  x-api-slug: wikipedia
+  x-api-slug: metricslegacypagecountsaggregateprojectaccesssitegranularitystartend-get
   description: |-
     Given a project and a date range, returns a timeseries of pagecounts.
     You can filter by access site (mobile or desktop) and you can choose between monthly,
@@ -316,13 +331,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/legacy/pagecounts/aggregate/{project}/{access-site}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricslegacypagecountsaggregateprojectaccesssitegranularitystartend-get-openapi.md
-- name: Wikipedia Get pageview counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get pageview counts for a project.
+  x-api-slug: metricspageviewsaggregateprojectaccessagentgranularitystartend-get
   description: |-
     Given a date range, returns a timeseries of pageview counts. You can filter by project,
     access method and/or agent type. You can choose between daily and hourly granularity
@@ -334,13 +350,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/pageviews/aggregate/{project}/{access}/{agent}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricspageviewsaggregateprojectaccessagentgranularitystartend-get-openapi.md
-- name: Wikipedia Get pageview counts for a page.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get pageview counts for a page.
+  x-api-slug: metricspageviewsperarticleprojectaccessagentarticlegranularitystartend-get
   description: |-
     Given a Mediawiki article and a date range, returns a daily timeseries of its pageview
     counts. You can also filter by access method and/or agent type.
@@ -351,13 +368,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/pageviews/per-article/{project}/{access}/{agent}/{article}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricspageviewsperarticleprojectaccessagentarticlegranularitystartend-get-openapi.md
-- name: Wikipedia Get pageviews by country and access method.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get pageviews by country and access method.
+  x-api-slug: metricspageviewstopbycountryprojectaccessyearmonth-get
   description: |-
     Lists the pageviews to this project, split by country of origin for a given month.
     Because of privacy reasons, pageviews are given in a bucketed format, and countries
@@ -368,13 +386,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/pageviews/top-by-country/{project}/{access}/{year}/{month}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricspageviewstopbycountryprojectaccessyearmonth-get-openapi.md
-- name: Wikipedia Get the most viewed articles for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get the most viewed articles for a project.
+  x-api-slug: metricspageviewstopprojectaccessyearmonthday-get
   description: |-
     Lists the 1000 most viewed articles for a given project and timespan (month or day).
     You can filter by access method.
@@ -385,13 +404,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/pageviews/top/{project}/{access}/{year}/{month}/{day}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricspageviewstopprojectaccessyearmonthday-get-openapi.md
-- name: Wikipedia Get newly registered users counts for a project.
-  x-api-slug: wikipedia
+- name: Wikipedia - Get newly registered users counts for a project.
+  x-api-slug: metricsregisteredusersnewprojectgranularitystartend-get
   description: |-
     Given a Mediawiki project and a date range, returns a timeseries of its newly registered
     users counts. You can choose between daily and monthly granularity. The newly registered
@@ -403,13 +423,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/registered-users/new/{project}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricsregisteredusersnewprojectgranularitystartend-get-openapi.md
-- name: Wikipedia Get unique devices count per project
-  x-api-slug: wikipedia
+- name: Wikipedia - Get unique devices count per project
+  x-api-slug: metricsuniquedevicesprojectaccesssitegranularitystartend-get
   description: |-
     Given a project and a date range, returns a timeseries of unique devices counts.
     You need to specify a project, and can filter by accessed site (mobile or desktop).
@@ -421,13 +442,14 @@ apis:
       [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//metrics/unique-devices/{project}/{access-site}/{granularity}/{start}/{end}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/metricsuniquedevicesprojectaccesssitegranularitystartend-get-openapi.md
-- name: Wikipedia Machine-translate content
-  x-api-slug: wikipedia
+- name: Wikipedia - Machine-translate content
+  x-api-slug: transformhtmlfromfrom-langtoto-lang-post
   description: |-
     Fetches the machine translation for the posted content from the source
     to the destination language.
@@ -435,13 +457,14 @@ apis:
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/html/from/{from_lang}/to/{to_lang}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformhtmlfromfrom-langtoto-lang-post-openapi.md
-- name: Wikipedia Machine-translate content
-  x-api-slug: wikipedia
+- name: Wikipedia - Machine-translate content
+  x-api-slug: transformhtmlfromfrom-langtoto-langprovider-post
   description: |-
     Fetches the machine translation for the posted content from the source
     to the destination language.
@@ -449,91 +472,90 @@ apis:
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/html/from/{from_lang}/to/{to_lang}/{provider}
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformhtmlfromfrom-langtoto-langprovider-post-openapi.md
-- name: Wikipedia Lists the language pairs supported by the back-end
-  x-api-slug: wikipedia
+- name: Wikipedia - Lists the language pairs supported by the back-end
+  x-api-slug: transformlistlanguagepairs-get
   description: |-
     Fetches the list of language pairs the back-end service can translate
 
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/list/languagepairs/
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformlistlanguagepairs-get-openapi.md
-- name: Wikipedia Lists the tools available for a language pair
-  x-api-slug: wikipedia
+- name: Wikipedia - Lists the tools available for a language pair
+  x-api-slug: transformlistpairfromto-get
   description: |-
     Fetches the list of tools that are available for the given pair of languages.
 
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/list/pair/{from}/{to}/
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformlistpairfromto-get-openapi.md
-- name: Wikipedia Lists the tools and language pairs available for the given tool
+- name: Wikipedia - Lists the tools and language pairs available for the given tool
     category
-  x-api-slug: wikipedia
+  x-api-slug: transformlisttooltool-get
   description: |-
     Fetches the list of tools and all of the language pairs it can translate
 
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/list/tool/{tool}/
-  tags: Wiki
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformlisttooltool-get-openapi.md
-- name: Wikipedia Fetch the dictionary meaning of a word
-  x-api-slug: wikipedia
+- name: Wikipedia - Fetch the dictionary meaning of a word
+  x-api-slug: transformwordfromfrom-langtoto-langword-get
   description: |-
     Fetches the dictionary meaning of a word from a language and displays
     it in the target language.
 
     Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
-  humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/word/from/{from_lang}/to/{to_lang}/{word}
-  tags: Wiki
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformwordfromfrom-langtoto-langword-get-openapi.md
-- name: Wikipedia Fetch the dictionary meaning of a word
-  x-api-slug: wikipedia
-  description: |-
-    Fetches the dictionary meaning of a word from a language and displays
-    it in the target language.
-
-    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
-  humanURL: https://www.wikipedia.org/
-  baseURL: https://wikimedia.org//api/rest_v1//transform/word/from/{from_lang}/to/{to_lang}/{word}/{provider}
-  tags: Wiki
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformwordfromfrom-langtoto-langwordprovider-get-openapi.md
-- name: Wikipedia
-  x-api-slug: wikipedia
-  description: Wikipedia is a free online encyclopedia, created and edited by volunteers
-    around the world and hosted by the Wikimedia Foundation.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
   humanURL: https://www.wikipedia.org/
   baseURL: https://wikimedia.org//api/rest_v1
-  tags: Wiki
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformwordfromfrom-langtoto-langword-get-openapi.md
+- name: Wikipedia - Fetch the dictionary meaning of a word
+  x-api-slug: transformwordfromfrom-langtoto-langwordprovider-get
+  description: |-
+    Fetches the dictionary meaning of a word from a language and displays
+    it in the target language.
+
+    Stability: [unstable](https://www.mediawiki.org/wiki/API_versioning#Unstable)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/144-wikipedia.jpg
+  humanURL: https://www.wikipedia.org/
+  baseURL: https://wikimedia.org//api/rest_v1
+  tags: Wiki, Content, Imports, Stack Network, Stack, Media, Technology, internet,
+    General Data, Pedestal, Historical Data API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/wikipedia/transformwordfromfrom-langtoto-langwordprovider-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://webtris.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://wikipedia.stack.network
 - type: x-base
   url: http://en.wikipedia.org/w/api.php
 - type: x-crunchbase

@@ -7,133 +7,136 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddi
 x-kinRank: "9"
 x-alexaRank: "6"
 tags: Wiki
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Reddit Add Subreddit Wiki Alloweditor Act
-  x-api-slug: reddit
-  description: Allow/deny username to edit this wiki page
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
-  humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/alloweditor/act
-  tags: Subreddit, Wikioweditor, Act
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikialloweditoract-postnbsp-openapi.md
-- name: Reddit Subreddit Wiki Edit
-  x-api-slug: reddit
+- name: Reddit - Subreddit Wiki Edit
+  x-api-slug: rsubredditwikiedit-postnbsp
   description: Edit a wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/edit
-  tags: Subreddit, Wiki, Edit
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikiedit-postnbsp-openapi.md
-- name: Reddit Add Subreddit Wiki
-  x-api-slug: reddit
+- name: Reddit - Add Subreddit Wiki
+  x-api-slug: rsubredditwikihide-postnbsp
   description: Toggle the public visibility of a wiki page revision
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/hide
-  tags: Subreddit, Wiki
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikihide-postnbsp-openapi.md
-- name: Reddit Add Subreddit Wiki Revert
-  x-api-slug: reddit
+- name: Reddit - Add Subreddit Wiki Revert
+  x-api-slug: rsubredditwikirevert-postnbsp
   description: Revert a wiki page to revision
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revert
-  tags: Subreddit, Wiki, Revert
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikirevert-postnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Discussions Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Discussions Page
+  x-api-slug: rsubredditwikidiscussionspage-getnbsp
   description: Retrieve a list of discussions about this wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/discussions/page
-  tags: Subreddit, Wiki, Discussions, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikidiscussionspage-getnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Pages
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Pages
+  x-api-slug: rsubredditwikipages-getnbsp
   description: Retrieve a list of wiki pages in this subreddit
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/pages
-  tags: Subreddit, Wiki, Pages
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikipages-getnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Revisions
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Revisions
+  x-api-slug: rsubredditwikirevisions-getnbsp
   description: Retrieve a list of recently changed wiki pages in this subreddit
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions
-  tags: Subreddit, Wiki, Revisions
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikirevisions-getnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Revisions Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Revisions Page
+  x-api-slug: rsubredditwikirevisionspage-getnbsp
   description: Retrieve a list of revisions of this wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/revisions/page
-  tags: Subreddit, Wiki, Revisions, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikirevisionspage-getnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Settings Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Settings Page
+  x-api-slug: rsubredditwikisettingspage-getnbsp
   description: Retrieve the current permission settings for page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
-  tags: Subreddit, Wiki, Settings, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikisettingspage-getnbsp-openapi.md
-- name: Reddit Add Subreddit Wiki Settings Page
-  x-api-slug: reddit
+- name: Reddit - Add Subreddit Wiki Settings Page
+  x-api-slug: rsubredditwikisettingspage-postnbsp
   description: Update the permissions and visibility of wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/settings/page
-  tags: Subreddit, Wiki, Settings, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikisettingspage-postnbsp-openapi.md
-- name: Reddit Get Subreddit Wiki Page
-  x-api-slug: reddit
+- name: Reddit - Get Subreddit Wiki Page
+  x-api-slug: rsubredditwikipage-getnbsp
   description: Return the content of a wiki page
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
   humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com///{/r/subreddit}/wiki/page
-  tags: Subreddit, Wiki, Page
+  baseURL: https://www.reddit.com//
+  tags: Social, Social, My API Stack, Links, Stack Network, Stack, Media, internet,
+    Mobile, Technology, SDIO Syndication, General Data, Pedestal, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/rsubredditwikipage-getnbsp-openapi.md
-- name: Reddit
-  x-api-slug: reddit
-  description: Reddit is a community of millions of users engaging in the creation
-    of content and the sharing of conversation across tens of thousands of topics.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/3516-reddit.jpg
-  humanURL: http://www.reddit.com
-  baseURL: https://www.reddit.com//
-  tags: Wiki
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/reddit/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://rebilly.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://reddit.stack.network
 - type: x-authentication
   url: https://github.com/reddit/reddit/wiki/OAuth2
 - type: x-base

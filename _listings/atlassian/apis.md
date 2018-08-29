@@ -1,34 +1,60 @@
 ---
 name: Atlassian
-description: Atlassian is a software company that provides innovative enterprise software
-  solutions to a number of organizations. Originally founded in 2002 in Sydney, Australia,
-  the company has quickly grown to establish a global presence with over 20,000 customers
-  in over 134 countries.nIn addition to the effective enterprise solutions offered
-  to its customers, Atlassian prides itself on its customer service and support. Indeed,
-  the company has won numerous awards for its suite of software and the accompanying
-  support.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/691_logo.png
+x-slug: atlassian
+description: Millions of users globally rely on Atlassian products every day for improving
+  software development, project management, collaboration, and code quality.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg
 x-kinRank: "8"
-x-alexaRank: ""
-tags:
-- Wiki
-- Stack Network
-- Programming
-- Issues
-- Coding
-- Code Issues
-created: "2018-03-10"
-modified: "2018-03-10"
-url: https://raw.githubusercontent.com/streamdata-gallery/wiki/master/_listings/atlassian/apis.yaml
+x-alexaRank: "1656"
+tags: Wiki
+created: "2018-08-28"
+modified: "2018-08-28"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/wiki/master/_listings/atlassian/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:
+- type: x-openapi
+  url: https://developer.atlassian.com/cloud/jira/platform/swagger.v3.json
+- type: x-openapi
+  url: https://developer.atlassian.com/cloud/confluence/swagger.v3.json
+- type: x-openapi
+  url: https://developer.atlassian.com/cloud/jira/software/swagger.v3.json
+- type: x-openapi
+  url: https://developer.atlassian.com/cloud/jira/service-desk/swagger.v3.json
 - type: x-website
   url: http://atlassian.com/
+- type: x-website
+  url: http://www.atlassian.com
+- type: x-api-gallery
+  url: http://att.dev.program.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://atlassian.stack.network
 - type: x-blog
   url: http://blogs.atlassian.com/
 - type: x-crunchbase
+  url: https://crunchbase.com/organization/atlassian
+- type: x-crunchbase
   url: http://www.crunchbase.com/company/atlassian
+- type: x-email
+  url: copyright@atlassian.com
+- type: x-email
+  url: trademarks@atlassian.com
+- type: x-email
+  url: sales@atlassian.com
+- type: x-email
+  url: ar_enterprise@atlassian.com
+- type: x-email
+  url: privacy@atlassian.com
+- type: x-email
+  url: eudatarep@atlassian.com
+- type: x-email
+  url: experts@atlassian.com
+- type: x-email
+  url: remittance@atlassian.com
+- type: x-email
+  url: ap@atlassian.com
+- type: x-email
+  url: procurement@atlassian.com
 - type: x-github
   url: https://github.com/atlassian
 - type: x-privacy-policy
